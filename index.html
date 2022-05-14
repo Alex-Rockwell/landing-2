@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex">
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="./js/script.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <title>Home - Some Company</title>
+</head>
+<body>
+
+  <section class="price">
+    
+    <!-- Tab links -->
+    <div class="tab">
+      <button class="tablinks" onclick="openCity(event, 'tab1')" id="defaultOpen">Тарифы</button>
+      <button class="tablinks" onclick="openCity(event, 'tab2')">Подробнее</button>
+      <button class="tablinks" onclick="openCity(event, 'tab3')">Индивидуальные решения</button>
+    </div>
+
+    <!-- Tab content -->
+    <div id="tab1" class="tabcontent">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi voluptatum amet, aut enim, et iure distinctio culpa dolores quas provident temporibus nam exercitationem mollitia tenetur repellat eaque! Dolorem, repudiandae? Dignissimos!</p>
+    </div>
+
+    <div id="tab2" class="tabcontent">
+      <h3>Выберите тариф, подходящий именно Вашему сайту</h3>
+      <table>
+        <thead>
+          <tr class="thead-row">
+            <th>Тарифные опции</th>
+            <th>
+              <button data-model-btn="1" class="tarif tarif--color1">Базовый</button>
+            </th>
+            <th>
+              <button data-model-btn="2" class="tarif tarif--color2">Универсальный</button>
+            </th>
+            <th>
+              <button data-model-btn="3" class="tarif tarif--color3">Бизнес</button>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="tdata-row-1">
+            <td>БЕЗОПАСНОСТЬ</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr class="tdata-row-2">
+            <td>Защита от вирусов и взломов, устранение сбоев</td>
+            <td class="centered">
+              <span class="circle circle--blue"></span>
+              <span class="circle circle--blue"></span>
+              <span class="circle circle--blue"></span>
+            </td>
+            <td class="centered">
+              <span class="circle circle--blue"></span>
+              <span class="circle circle--blue"></span>
+              <span class="circle circle--blue"></span>
+            </td>
+            <td class="centered">
+              <span class="circle circle--blue"></span>
+              <span class="circle circle--blue"></span>
+              <span class="circle circle--blue"></span>
+            </td>
+          </tr>
+          <tr class="tdata-row-2">
+            <td>Резервное копирование</td>
+            <td class="centered">
+              <span class="circle circle--blue"></span>
+              <span class="circle circle--blue"></span>
+              <span class="circle circle--blue"></span>
+            </td>
+            <td class="centered">
+              <span class="circle circle--blue"></span>
+              <span class="circle circle--blue"></span>
+              <span class="circle circle--blue"></span>
+            </td>
+            <td class="centered">
+              <span class="circle circle--blue"></span>
+              <span class="circle circle--blue"></span>
+              <span class="circle circle--blue"></span>
+            </td>
+          </tr>
+          <tr class="tdata-row-2">
+            <td>Установка и настройка https</td>
+            <td class="centered">
+              <span class="circle circle--blue"></span>
+              <span class="circle circle--gray"></span>
+              <span class="circle circle--gray"></span>
+            </td>
+            <td class="centered">
+              <span class="circle circle--blue"></span>
+              <span class="circle circle--blue"></span>
+              <span class="circle circle--gray"></span>
+            </td>
+            <td class="centered">
+              <span class="circle circle--blue"></span>
+              <span class="circle circle--blue"></span>
+              <span class="circle circle--blue"></span>
+            </td>
+          </tr>
+          <tr class="tdata-row-2">
+            <td>Защита от вирусов и взломов, устранение сбоев</td>
+            <td class="centered">
+              <span class="circle circle--gray"></span>
+              <span class="circle circle--gray"></span>
+              <span class="circle circle--gray"></span>
+            </td>
+            <td class="centered">
+              <span class="circle circle--gray"></span>
+              <span class="circle circle--gray"></span>
+              <span class="circle circle--gray"></span>
+            </td>
+            <td class="centered">
+              <span class="circle circle--blue"></span>
+              <span class="circle circle--blue"></span>
+              <span class="circle circle--blue"></span>
+            </td>
+          </tr>
+
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div id="tab3" class="tabcontent">
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In maxime saepe, quo facilis nam minima praesentium assumenda impedit modi est molestiae consectetur porro officia doloribus, perspiciatis asperiores! Nostrum, nam vitae!</p>
+    </div>
+
+    <!-- /////// Modal-1 /////////// -->
+
+    <div data-modal-window="1" class="modal">
+      <div class="modal__content">
+        <h1 class="heading-secondary centered pb-10">Интересует базовый пакет услуг?</h1>
+        <p class="modal__text">Заполните форму, и наш менеджер перезвонит Вам.</p>
+        <form action="" method="post">
+          <input type="text" placeholder="Ваше имя*" class="modal__input">
+          <input type="text" placeholder="Ваше имя*" class="modal__input">
+          <input type="text" placeholder="Ваше имя*" class="modal__input">
+          <input type="text" placeholder="Ваше имя*" class="modal__input">
+        </form>
+      </div>
+      <!-- <button class="close-button">&times;</button> -->
+      <button class="close-button">
+        <img src="./img/close.svg" alt="">
+      </button>
+    </div>
+
+    <div data-modal-window="2" class="modal">
+      <div class="modal-header">
+        <div class="modal-title">Modal 2</div>
+        <button class="close-button">&times;</button>
+      </div>
+      <div class="modal-body">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt dignissimos minus hic, aspernatur eligendi porro pariatur excepturi atque velit mollitia! Velit esse odio suscipit facere est ipsa illum eligendi architecto dolore deleniti! Ratione tempora, amet cupiditate est eos expedita ullam maxime consequuntur dolor, beatae quisquam! Aliquam architecto tempora eaque nemo consectetur molestias esse, sed dolor, nesciunt beatae delectus ipsum, nobis ad officiis vitae! At perspiciatis nam, architecto laborum officiis voluptatem omnis! Iusto, laudantium magni sed ipsum maiores nemo quia mollitia!
+      </div>
+    </div>
+
+    <div data-modal-window="3" class="modal">
+      <div class="modal-header">
+        <div class="modal-title">Modal 3</div>
+        <button class="close-button">&times;</button>
+      </div>
+      <div class="modal-body">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt dignissimos minus hic, aspernatur eligendi porro pariatur excepturi atque velit mollitia! Velit esse odio suscipit facere est ipsa illum eligendi architecto dolore deleniti! Ratione tempora, amet cupiditate est eos expedita ullam maxime consequuntur dolor, beatae quisquam! Aliquam architecto tempora eaque nemo consectetur molestias esse, sed dolor, nesciunt beatae delectus ipsum, nobis ad officiis vitae! At perspiciatis nam, architecto laborum officiis voluptatem omnis! Iusto, laudantium magni sed ipsum maiores nemo quia mollitia!
+      </div>
+    </div>
+
+    <div class="overlay"></div>
+    
+  </section>
+
+
+</body>
+</html>
