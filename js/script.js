@@ -1,3 +1,29 @@
+
+////////////////////////////// Tabs //////////////////////////////////////
+
+document.getElementById("defaultOpen").click();
+
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+
+
+////////////////////////////// Modal Windows //////////////////////////////////////
+
 let buttons = document.querySelectorAll(".tarif");
 let modals =  document.querySelectorAll('.modal')
 let overlay =  document.querySelector('.overlay')
@@ -29,26 +55,16 @@ function hideModal() {
 }
 
 
+/////////////////////////// Accordion ////////////////////////////////
 
+const title = document.querySelector('.time__arrow')
+const contentBlock = document.querySelector('.time__content')
 
-document.getElementById("defaultOpen").click();
+title.addEventListener('click', function() {
+  contentBlock.classList.toggle('time__content--active')
+  title.classList.toggle('time__arrow--active')
+})
 
-function openCity(evt, cityName) {
-  var i, tabcontent, tablinks;
-
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-
-  document.getElementById(cityName).style.display = "block";
-  evt.currentTarget.className += " active";
-}
 
 
 /////////////////////////////////////////////////////////////////////////

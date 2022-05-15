@@ -19,27 +19,59 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-h3 {
+.heading-secondary {
   font-weight: 700;
-  font-size: 36px;
+  font-size: 48px;
   line-height: 48px;
   text-align: center;
   color: #104F95;
 }
 
-.heading-secondary {
+.heading-tertiary {
   font-weight: 700;
   font-size: 36px;
   line-height: 48px;
   color: #104F95;
+}
+
+.heading-small {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #104F95;
+}
+
+.text-sm {
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #000000;
 }
 
 .centered {
   text-align: center;
 }
 
-.pb-10 {
-  padding-bottom: 10px;
+.mt-110 {
+  margin-top: 110px;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+.mb-60 {
+  margin-bottom: 60px;
+}
+
+.pt-30 {
+  padding-top: 30px;
+}
+
+.container-md {
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 //////////////////////////////// Price /////////////////////////
@@ -141,13 +173,16 @@ h3 {
     &--color3 {
       background: #FF6E7A;
     }
+    &--color4 {
+      background: #72B5FF;
+    }
   }
   .tarif:hover {
     cursor: pointer;
   }
 }
 
-////////////////////////////////////////////
+////////////////////////// Tabs /////////////////////////
 
 .tab {
   overflow: hidden;
@@ -185,11 +220,12 @@ h3 {
   height: 800px;
 }
 
-/////////////////////////////// Modal window ///////////////////////////////
+/////////////////////////////// Modal windows ///////////////////////////////
 
 .modal {
-  max-width: 1300px;  //////
-  height: 600px; //////////
+  max-height: 100vh;
+  overflow-y: auto;
+  width: 67vw;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -199,11 +235,10 @@ h3 {
   z-index: 10;
   transform: translate(-50%, -50%) scale(0);
   transition: all .3s ease-in-out;
-  padding: 120px 160px;
+  padding: 110px 150px;
   display: flex;
   justify-content: center;
   align-items: center;
-  // position: relative;
 }
 
 .modal.active {
@@ -238,9 +273,9 @@ h3 {
   opacity: 1;
 }
 
-.modal__content {
-  // width: 600px;
-}
+// .modal__content {
+//   width: auto;
+// }
 
 .modal__text {
   font-weight: 400;
@@ -252,4 +287,191 @@ h3 {
 
 .modal__input {
   width: 100%;
+  border: none;
+  border-bottom: 1px solid #9F9F9F;
+  margin-bottom: 40px;
+}
+.modal__input:focus {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #000;
+}
+.modal__input::placeholder {
+  font-family: 'Roboto', sans-serif;
+  font-style: italic;
+  font-size: 14px;
+  line-height: 20px;
+  color: #2E2E2E;
+}
+.modal__input:focus::placeholder {
+  font-family: 'Roboto', sans-serif;
+  font-style: italic;
+  font-size: 14px;
+  line-height: 20px;
+  color: #2E2E2E;
+}
+.modal__submit {
+  display: block;
+  margin: auto;
+  background: #72B5FF;
+  border: 2px solid #31283C;
+  border-radius: 40px;
+  padding: 10px 85px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #FFFFFF;
+  position: relative;
+}
+.modal__submit:hover {
+  cursor: pointer;
+}
+.modal__submit::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  background:#31283C;
+  border: 2px solid #31283C;
+  border-radius: 40px;
+  position: absolute;
+  top: 8px;
+  left: -3px;
+  z-index: -1;
+}
+
+
+/////////////////////////////// Time section ///////////////////////////////
+
+.time__svg {
+  display: block;
+  margin: 0 auto;
+}
+.time__arrow {
+  display: block;
+  margin: 0 auto;
+  margin-top: 15px;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &--active {
+    transform: rotate(180deg) translateY(10px);
+  }
+}
+.time__content {
+  max-width: 1920px;
+  height: 660px;
+  margin: 0 auto;
+  display: none;
+  padding: 50px 0 50px;
+
+  &--active {
+    display: block;
+  }
+}
+
+.time__img-box {
+  max-width: 920px;
+  height: 480px;
+  margin: 0 auto;
+  background-color: #fff;
+  position: relative;
+}
+
+.time__img-main {
+  display: inline-block;
+  position: absolute;
+  bottom: 55px;
+  left: 45%;
+}
+
+.time__list {
+  list-style: none;
+}
+
+.time__li {
+  display: inline-block;
+  position: absolute;
+
+  &:not(:first-child) {
+    text-align: center;
+    width: 140px;
+  }
+
+  &:first-child {
+    left: 0;
+    bottom: 0;
+  }
+  &:nth-child(2) {
+    left: 13%;
+    top: 18%;
+  }
+  &:nth-child(3) {
+    left: 32%;
+    top: 0;
+  }
+  &:nth-child(4) {
+    right: 32%;
+    top: 0;
+  }
+  &:nth-child(5) {
+    right: 13%;
+    top: 18%;
+  }
+  &:last-child {
+    right: 0;
+    bottom: 0;
+  }
+}
+
+/////////////////////////////// Domen section ///////////////////////////////
+
+.domen {
+  padding: 110px 0 110px;
+}
+
+/////////////////////////////// Stages section ///////////////////////////////
+
+.stages {
+  padding: 110px 0 0;
+}
+.stages__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  list-style: none;
+  padding-top: 70px;
+}
+.stages__li {
+  width: 290px;
+  height: 300px;
+  position: relative;
+}
+.stages__img {
+  display: block;
+  margin: 0 auto;
+
+}
+.stages__timeline {
+  position: absolute;
+  top: 15%;
+  left: 60%;
+  z-index: -1;
+}
+.stages__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #31283C;
+  text-align: center;
+  margin-top: 10px;
+}
+
+
+/////////////////////////////// Clients section ///////////////////////////////
+
+.clients {
+  padding: 110px 0 110px;
 }

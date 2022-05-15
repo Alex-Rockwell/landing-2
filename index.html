@@ -29,7 +29,7 @@
     </div>
 
     <div id="tab2" class="tabcontent">
-      <h3>Выберите тариф, подходящий именно Вашему сайту</h3>
+      <h2 class="heading-tertiary centered mb-10">Выберите тариф, подходящий именно Вашему сайту</h2>
       <table>
         <thead>
           <tr class="thead-row">
@@ -133,53 +133,195 @@
           </tr>
         </tbody>
       </table>
+      <h2 class="heading-tertiary centered mb-10">Выберите готовый тариф</h2>
+      <div class="centered mb-10">
+        <button data-model-btn="1" class="tarif tarif--color1">Базовый</button>
+        <button data-model-btn="2" class="tarif tarif--color2">Универсальный</button>
+        <button data-model-btn="3" class="tarif tarif--color3">Бизнес</button>
+      </div>
+      <h2 class="heading-tertiary centered mb-10">Или создайте свой</h2>
+      <div class="centered mb-10">
+        <button data-model-btn="4" class="tarif modal__submit">Индивидуальный</button>
+      </div>
     </div>
 
     <div id="tab3" class="tabcontent">
       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In maxime saepe, quo facilis nam minima praesentium assumenda impedit modi est molestiae consectetur porro officia doloribus, perspiciatis asperiores! Nostrum, nam vitae!</p>
     </div>
 
-    <!-- /////// Modal-1 /////////// -->
+    <!-- ///////////// Modal windows ///////////////// -->
 
     <div data-modal-window="1" class="modal">
       <div class="modal__content">
-        <h1 class="heading-secondary centered pb-10">Интересует базовый пакет услуг?</h1>
-        <p class="modal__text">Заполните форму, и наш менеджер перезвонит Вам.</p>
-        <form action="" method="post">
-          <input type="text" placeholder="Ваше имя*" class="modal__input">
-          <input type="text" placeholder="Ваше имя*" class="modal__input">
-          <input type="text" placeholder="Ваше имя*" class="modal__input">
-          <input type="text" placeholder="Ваше имя*" class="modal__input">
+        <h2 class="heading-tertiary centered mb-10">Интересует базовый пакет услуг?</h2>
+        <p class="modal__text mb-60">Заполните форму, и наш менеджер перезвонит Вам.</p>
+        <form >
+          <input type="text" placeholder="Ваше имя*" class="modal__input mb-10" required>
+          <input type="text" placeholder="Название организации" class="modal__input mb-10">
+          <input type="text" placeholder="Телефон*" class="modal__input mb-10" required>
+          <input type="email" placeholder="Почта" class="modal__input mb-10">
+          <button type="submit" class="modal__submit">Отправить</button>
         </form>
       </div>
-      <!-- <button class="close-button">&times;</button> -->
       <button class="close-button">
         <img src="./img/close.svg" alt="">
       </button>
     </div>
 
     <div data-modal-window="2" class="modal">
-      <div class="modal-header">
-        <div class="modal-title">Modal 2</div>
-        <button class="close-button">&times;</button>
+      <div class="modal__content">
+        <h2 class="heading-tertiary centered mb-10">Интересует универсальный пакет услуг?</h2>
+        <p class="modal__text mb-60">Заполните форму, и наш менеджер перезвонит Вам.</p>
+        <form >
+          <input type="text" placeholder="Ваше имя*" class="modal__input mb-10" required>
+          <input type="text" placeholder="Название организации" class="modal__input mb-10">
+          <input type="text" placeholder="Телефон*" class="modal__input mb-10" required>
+          <input type="email" placeholder="Почта" class="modal__input mb-10">
+          <button type="submit" class="modal__submit">Отправить</button>
+        </form>
       </div>
-      <div class="modal-body">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt dignissimos minus hic, aspernatur eligendi porro pariatur excepturi atque velit mollitia! Velit esse odio suscipit facere est ipsa illum eligendi architecto dolore deleniti! Ratione tempora, amet cupiditate est eos expedita ullam maxime consequuntur dolor, beatae quisquam! Aliquam architecto tempora eaque nemo consectetur molestias esse, sed dolor, nesciunt beatae delectus ipsum, nobis ad officiis vitae! At perspiciatis nam, architecto laborum officiis voluptatem omnis! Iusto, laudantium magni sed ipsum maiores nemo quia mollitia!
-      </div>
+      <button class="close-button">
+        <img src="./img/close.svg" alt="">
+      </button>
     </div>
 
     <div data-modal-window="3" class="modal">
-      <div class="modal-header">
-        <div class="modal-title">Modal 3</div>
-        <button class="close-button">&times;</button>
+      <div class="modal__content">
+        <h2 class="heading-tertiary centered mb-10">Интересует бизнес пакет услуг?</h2>
+        <p class="modal__text mb-60">Заполните форму, и наш менеджер перезвонит Вам.</p>
+        <form >
+          <input type="text" placeholder="Ваше имя*" class="modal__input mb-10" required>
+          <input type="text" placeholder="Название организации" class="modal__input mb-10">
+          <input type="text" placeholder="Телефон*" class="modal__input mb-10" required>
+          <input type="email" placeholder="Почта" class="modal__input mb-10">
+          <button type="submit" class="modal__submit">Отправить</button>
+        </form>
       </div>
-      <div class="modal-body">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt dignissimos minus hic, aspernatur eligendi porro pariatur excepturi atque velit mollitia! Velit esse odio suscipit facere est ipsa illum eligendi architecto dolore deleniti! Ratione tempora, amet cupiditate est eos expedita ullam maxime consequuntur dolor, beatae quisquam! Aliquam architecto tempora eaque nemo consectetur molestias esse, sed dolor, nesciunt beatae delectus ipsum, nobis ad officiis vitae! At perspiciatis nam, architecto laborum officiis voluptatem omnis! Iusto, laudantium magni sed ipsum maiores nemo quia mollitia!
+      <button class="close-button">
+        <img src="./img/close.svg" alt="">
+      </button>
+    </div>
+
+    <div data-modal-window="4" class="modal">
+      <div class="modal__content">
+        <h2 class="heading-tertiary centered mb-10">Интересует индивидуальный пакет услуг?</h2>
+        <p class="modal__text mb-60">Заполните форму, и наш менеджер перезвонит Вам.</p>
+        <form >
+          <input type="text" placeholder="Ваше имя*" class="modal__input mb-10" required>
+          <input type="text" placeholder="Название организации" class="modal__input mb-10">
+          <input type="text" placeholder="Телефон*" class="modal__input mb-10" required>
+          <input type="email" placeholder="Почта" class="modal__input mb-10">
+          <button type="submit" class="modal__submit">Отправить</button>
+        </form>
       </div>
+      <button class="close-button">
+        <img src="./img/close.svg" alt="">
+      </button>
     </div>
 
     <div class="overlay"></div>
     
+  </section>
+
+  <section class="time container-md pt-30">
+    <img src="./img/clock.svg" alt="часы" class="time__svg">
+    <h2 class="heading-tertiary centered">Что мы успеем за час?</h2>
+    <img src="./img/clock-arrow.svg" class="time__arrow">
+    <div class="time__content">
+      <div class="time__img-box">
+        <img src="./img/clock.svg" alt="часы" class="time__img-main">
+        <ul class="time__list">
+          <li class="time__li">
+            <img src="./img/item-1.svg" alt="item-img" class="mb-10">
+            <p class="text-sm centered mt-10">ховер</p>
+          </li>
+          <li class="time__li">
+            <img src="./img/item-2.svg" alt="item-img" class="mb-10">
+            <p class="text-sm centered mt-10">Обработать
+              10 фотографий</p>
+          </li>
+          <li class="time__li">
+            <img src="./img/item-3.svg" alt="item-img" class="mb-10">            
+            <p class="text-sm centered mt-10">Создать
+              макет акции</p>
+          </li>
+          <li class="time__li">
+            <img src="./img/item-4.svg" alt="item-img" class="mb-10">            
+            <p class="text-sm centered mt-10">Провести
+              SEO-анализ</p>
+          </li>
+          <li class="time__li">
+            <img src="./img/item-5.svg" alt="item-img" class="mb-10">            
+            <p class="text-sm centered mt-10">Обновить
+              каталог товаров</p>
+          </li>
+          <li class="time__li">
+            <img src="./img/item-6.svg" alt="item-img" class="mb-10">            
+            <p class="text-sm centered mt-10">Установить
+              программный модуль</p>
+          </li>
+        </ul>
+      </div>
+      <div class="time__text-box">
+        <h2 class="heading-tertiary centered mb-10">Что мы успеем за час?</h2>
+        <p class="modal__text mb-60">Заполните форму, и наш менеджер перезвонит Вам.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="domen container-md">
+    <h2 class="heading-secondary">Тарифы услуги домен+хостинг</h2>
+    <ul class="domen__list">
+      <li class="domen__li"></li>
+    </ul>
+  </section>
+
+  <section class="stages container-md">
+    <h2 class="heading-secondary">Этапы работы над проектом</h2>
+    <ul class="stages__list">
+      <li class="stages__li">
+        <img src="./img/stages-1.svg" alt="stages-image" class="stages__img">
+        <h3 class="heading-small centered">Аудит сайта</h3>
+        <p class="stages__text">           
+          <span>Выявление проблем</span>
+          <br>
+          <span>и возможных решений</span>
+        </p>
+        <img src="./img/stages-timeline.svg" class="stages__timeline">
+      </li>
+      <li class="stages__li">
+        <img src="./img/stages-2.svg" alt="stages-image" class="stages__img">
+        <h3 class="heading-small centered">Выбор тарифа</h3>
+        <p class="stages__text">           
+          <span>Согласование плана работ и выбор</span>
+          <br>
+          <span>иподходящего тарифа</span>
+        </p>
+      </li>
+      <li class="stages__li">
+        <img src="./img/stages-3.svg" alt="stages-image" class="stages__img">
+        <h3 class="heading-small centered">Договор и оплата</h3>
+        <p class="stages__text">           
+          Подписание договора и оплата
+        </p>
+      </li>
+      <li class="stages__li">
+        <img src="./img/stages-4.svg" alt="stages-image" class="stages__img">
+        <h3 class="heading-small centered">Поддержка 24/7</h3>
+        <p class="stages__text">           
+          <span>Мы заботимся о вашем сайте</span>
+          <br>
+          <span>без выходных</span>
+        </p>
+      </li>
+    </ul>
+  </section>
+
+  <section class="clients container-md">
+    <h2 class="heading-secondary">Эту услугу уже подключили</h2>
+    <ul class="clients__list">
+      <li class="clients__li"></li>
+    </ul>
   </section>
 
 
